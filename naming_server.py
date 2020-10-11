@@ -8,7 +8,7 @@ app = Flask(__name__)
 directories = {}
 storage_servers = {}
 
-NUM_COPIES = 1
+NUM_COPIES = 2
 
 
 def get_available_servers():
@@ -143,4 +143,4 @@ def add_storage_server():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=os.environ['PORT'])
+    app.run(host='0.0.0.0', port=80)

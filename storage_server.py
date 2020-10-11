@@ -46,4 +46,4 @@ def join_cluster(naming_server_url, self_url):
 
 if __name__ == '__main__':
     join_cluster(os.environ['NAMING_SERVER_URL'], f"http://{os.environ['IP']}:{os.environ['PORT']}")
-    app.run(host='0.0.0.0', port=os.environ['PORT'])
+    app.run(host='0.0.0.0', port=80)
